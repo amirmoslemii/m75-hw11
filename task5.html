@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter Value 1: </label>
+    <input type="text" id="val1">
+    <br />
+    <br />
+    <label>Enter Value 2: </label>
+    <input type=".text" id="val2">
+    <br />
+    <br>
+    <button onclick="getAdd()" id="button">Click To Add</button>
+
+
+    <script>
+        function getAdd() {
+            let res
+            let val1 = document.getElementById("val1").value
+            let val2 = document.getElementById("val2").value
+            res = Number(val1) + Number(val2)
+            if (res != 0 && res % 2 == 0) {
+                document.getElementById('button').innerHTML = res
+                document.getElementById('button').style.background = 'red'
+                document.getElementById('button').style.color = 'white'
+            } else if (res != 0 && res % 2 != 0) {
+                document.getElementById('button').innerHTML = res
+                document.getElementById('button').style.background = 'blue'
+                document.getElementById('button').style.color = 'white'
+                document.getElementById('button').style.color = 'white'
+            }
+        }
+        getAdd()
+    </script>
+</body>
+
+</html>

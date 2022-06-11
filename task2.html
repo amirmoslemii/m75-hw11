@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="overflow-x:hidden;">
+    <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                <div class="overflow-hidden">
+
+                    <div class="flex space-x-2 justify-center mb-8">
+                        <button type="button" onclick="delRowCell()"
+                            class="inline-block mt-4 px-6 py-2.5 bg-red-600 text-white rounded">Remove</button>
+                    </div>
+
+                    <table class=" min-w-full text-center" id="del" xml:id="add">
+                        <thead class="border-b">
+                            <tr>
+                                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">
+                                    Class
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">
+                                    Heading
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">
+                                    Heading
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Default
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b border-blue-200" id="Primary1">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Primary
+                                </td>
+                                <td class=" text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap ">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b  border-purple-200" id="Secondary1">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Secondary
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b border-green-200" id="Success1">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Success
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b border-red-200" id="Danger1">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Danger
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b border-yellow-200" id="Warning1">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Warning
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b  border-indigo-200" id="Info1">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Info
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200" id="Light1">
+                                <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                    Light
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                            <tr class="border-b boder-gray-900" id="Dark1">
+                                <td class="text-sm text-white font-medium px-6 py-4 whitespace-nowrap">
+                                    Dark
+                                </td>
+                                <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                                <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                                    Cell
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="flex space-x-2 justify-center mb-8">
+                        <button type="button" onclick="myFunction()"
+                            class="inline-block mt-8 px-6 py-2.5 bg-blue-600 text-white rounded">Add</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./task2.js"></script>
+</body>
+
+</html>
